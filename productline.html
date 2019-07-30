@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myweb</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+*{
+   border: 2px solid black;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+#header{
+    width: 100%;
+    height: 90px;
+    background-color:rgba(201, 75, 37, 0.87);
+    text-align: center;
+}
+.head{
+    font-size: 50px;
+    font-family: monospace;
+    color: blanchedalmond;
+}
+#row{
+    height: 50px;
+}
+
+.serch{
+    margin-top: 10px;
+    border-radius:5px;
+}
+.serch:after{
+    background-image: url("img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+}
+.section1{
+    width: 100%;
+    padding: 0;
+    background: linear-gradient(to bottom,rgb(252, 249, 249) 0%,rgb(75, 74, 74) 100%);
+}
+/*.carousel{
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    margin: 0;
+}*/
+.carousel-item{
+    background-color: blueviolet;
+    height:800px;
+    background-size: cover;
+}
+.carousel-item:nth-child(1){
+    background-image: url("img1.jpg");
+    background-position: center;
+}
+.carousel-item:nth-child(2){
+    background-image: url("img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.carousel-item:nth-child(3){
+    background-image: url("../img/img1.jpg");
+    background-position: center;
+}
+#navbar{
+    background: linear-gradient(to bottom,rgb(34, 34, 33) 0% ,rgb(97, 97, 96) 100%);
+}
+#namecard1:before{
+    content: "";
+    width: 80px;
+    height: 50px;
+    border: 1px solid black;
+    display: block;
+    position: absolute;
+    left: 25px;
+    top:95px;
+    background-image: url("img1.jpg");
+    background-size: cover;
+    background-position: center,center;
+}
+#namecard2:before{
+    content: "";
+    width: 80px;
+    height: 50px;
+    border: 1px solid black;
+    display: block;
+    position: absolute;
+    left: 25px;
+    top:200px;
+    background-image: url("img1.jpg");
+    background-size: cover;
+    background-position: center,center;
+}
+
+.product{
+    display: inline;
+    color:rgb(19, 5, 16);
+    margin-left: 10px;
+    
+}
+/*/
+/*.section2>#namecard:before{
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+}
+*/
+.prd-context>input{
+    margin: 20px auto;
+    text-align: center;
+    padding: 4px 4px;
+    background-color: azure;
+    font-size: 30px;
+    color: blueviolet;
+    transition: background-color 0.5s;
+    display: block;
+    width: 150px;
+}
+.prd-context>input:hover{
+    background-color: rgb(67, 68, 68);
+}
+
+    </style>
+
+</head>
+<body>
+<header id="header" class="py-2">
+    <P class="head">人人有蝦釣</P>
+</header>
+<nav class="navbar navbar-expand-sm navbar-light " id="navbar">
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse"  id="collapsibleNavId">
+        <ul class="navbar-nav mt-0 mx-auto">
+            <li class="nav-item active">
+                <a class="nav-link mr-5" href="" style="color: cornsilk;box-shadow: 0px 0px 5px rgb(10, 10, 10);font-size: 20px" >我的首頁 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mr-5 " href="https://wizka6833.github.io/human/product.html" style="color: cornsilk;box-shadow: 0px 0px 5px rgb(10, 10, 10);font-size: 20px" >商品介紹</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link mr-5"  style="color: cornsilk;box-shadow: 0px 0px 5px rgb(10, 10, 10);font-size: 20px">相關影音</a>  
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link mr-5"  style="color: cornsilk;box-shadow: 0px 0px 5px rgb(10, 10, 10);font-size: 20px">Q&A</a>  
+            </li>
+        </ul>
+        <!--<form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        -->
+    </div>
+</nav>
+<section class="section1" id="section1">
+   <div class="row">
+       <div class="col-md-3">
+           <h1 style="padding: 5px 2px;text-align: center">商品櫥窗</h1>
+           <div class="prd-context">
+               <input type="button" value="天平" onclick="window.location.href=' https://wizka6833.github.io/try/productsky.html'">
+               <input type="button" value="浮標" onclick="window.location.href=' https://wizka6833.github.io/try/productfloat.html'">
+               <input type="button" value="水深棒" onclick="window.location.href=' https://wizka6833.github.io/try/productwater.html'">
+               <input type="button" value="釣組" onclick="window.location.href=' https://wizka6833.github.io/try/productline.html'">
+           </div>
+       </div>
+       <div class="col-md-9">
+           <div class="container" class="sky">
+           <div class="row">
+               <div class="col-md-6" style="text-align: center">
+                   <p>烏溜斬長標線組</p>
+                   <img src="./img1.jpg" alt="" style="width: 200px;height: 200px;" >
+               </div>
+               <div class="col-md-6" style="text-align: center">
+                   <p>西瓜阿波線組</p>
+                   <img src="./img1.jpg" alt="" style="width: 200px;height: 200px;" >
+               </div>
+            </div>
+            </div>
+   </div>
+</section>
+<footer class="footer " style="background: linear-gradient(to bottom,white 0%,gray 100%)">
+    <div class="row">
+        <div class="col-md-6 col-sm-12  my-4" style="border-right: 5px dashed rgb(10, 10, 10);" >
+            <p style="font-size: 50px;text-align: center">人人有蝦釣</p>
+            <div id="namecard1" style="margin: 5px; margin-left: 100px">
+              <p style="color: teal;font-size: 20px;font-weight:bold" >客服專線</p>
+              <p style="color: rgb(95, 92, 92)">0918206833</p>
+            </div>
+            <div id="namecard2" style="margin-left: 100px">
+              <p p style="color: teal;font-size: 20px;font-weight: bold " >專線服務時間</p>
+              <p style="color: rgb(95, 92, 92)">週一至週五 PM1:00 ~ PM10:00</p>
+              </div>
+        </div>
+        <div class="col-md-6 col-sm-12 my-auto">
+            <ul>
+                <li style="list-style:none">關於我們 <a href=""><p class="product" >公司簡介</p></a></li>
+                <li style="list-style:none">最新消息 <a href=""><p class="product" >優惠活動</p></a></li>
+                <li style="list-style:none">商品分類 <a href=""><p class="product" >天平</p></a><a href=""><p class="product" >浮標</p></a><a href=""><p class="product" >完整線組</p></a><a href=""><p class="product" >水深棒</p></a></li>
+                <li style="list-style:none">常見問題 <a href=""><p class="product" >購物需知</p></a><a href=""><p class="product" >Q&A常見問題</p></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>
