@@ -10,9 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <style>
-*{
+/**{
    border: 2px solid black;
-}
+}*/
 *{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -136,6 +136,16 @@ html,body{
 .prd-context>input:hover{
     background-color: rgb(67, 68, 68);
 }
+#sky{
+    background: linear-gradient(to bottom,rgb(247, 213, 213) 0%,rgb(169, 188, 230) 100%);
+}
+#sky-border{
+    transition:opacity 0.5s;
+}
+#sky-border:hover{
+    opacity: 0.3;
+    border: 2px solid yellow;
+}
 
     </style>
 
@@ -152,10 +162,10 @@ html,body{
     <div class="collapse navbar-collapse"  id="collapsibleNavId">
         <ul class="navbar-nav mt-0 mx-auto">
             <li class="nav-item active">
-                <a class="nav-link mr-5" href="" style="color: cornsilk;box-shadow: 0px 0px 5px rgb(10, 10, 10);font-size: 20px" >我的首頁 <span class="sr-only">(current)</span></a>
+                <a class="nav-link mr-5" href="https://wizka6833.github.io/human/myweb.html" style="color: cornsilk;box-shadow: 0px 0px 5px rgb(10, 10, 10);font-size: 20px" >我的首頁 <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mr-5 " href="https://wizka6833.github.io/human/product.html" style="color: cornsilk;box-shadow: 0px 0px 5px rgb(10, 10, 10);font-size: 20px" >商品介紹</a>
+                <a class="nav-link mr-5 " href="https://wizka6833.github.io/human/productsky.html" style="color: cornsilk;box-shadow: 0px 0px 5px rgb(10, 10, 10);font-size: 20px" >商品介紹</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link mr-5"  style="color: cornsilk;box-shadow: 0px 0px 5px rgb(10, 10, 10);font-size: 20px">相關影音</a>  
@@ -183,25 +193,40 @@ html,body{
            </div>
        </div>
        <div class="col-md-9">
+            <h3 style="margin: 10px;margin-left: 150px;">NEW ARRIVAL<span style="margin-left: 40px;font-size: 20px">最新商品</span></h3>
+            
            <div class="container" class="sky">
+           <hr >
            <div class="row">
-               <div class="col-md-6" style="text-align: center">
-                   <p>鈦合金O環天平</p>
+               <div class="col-md-6" style="text-align: center" id="sky">
+                   <div style="border: 2px solid rgba(129, 128, 128, 0.555);margin: 10px;" id="sky-border">
+                   <p style="font-size: 30px">鈦合金O環天平</p>
                    <img src="./img1.jpg" alt="" style="width: 200px;height: 200px;" >
+                   <p>45545545545</p>
+                   </div>
                </div>
-               <div class="col-md-6" style="text-align: center">
-                   <p>鈦合金精靈環天平</p>
+               <div class="col-md-6" style="text-align: center" id="sky">
+                   <div style="border: 2px solid rgba(129, 128, 128, 0.555);margin: 10px;" id="sky-border">
+                   <p style="font-size: 30px">鈦合金精靈環天平</p>
                    <img src="./img1.jpg" alt="" style="width: 200px;height: 200px;" >
+                   <p>kdsckdccjlkzjcklsajfcwoskjco</p>
+                </div>  
                </div>
             </div>
-            <div class="row">
-                    <div class="col-md-6" style="text-align: center">
-                        <p>鈦合金O環小天平</p>
+            <div class="row" style="margin-top: 20px">
+                    <div class="col-md-6" style="text-align: center" id="sky">
+                        <div style="border: 2px solid rgba(129, 128, 128, 0.555);margin: 10px;" id="sky-border">
+                        <p style="font-size: 30px">鈦合金O環小天平</p>
                         <img src="./img1.jpg" alt="" style="width: 200px;height: 200px;" >
+                        <p>jcjkzxchlkjzjcklzjclzkc</p>
                     </div>
-                    <div class="col-md-6" style="text-align: center">
-                        <p>不銹鋼天平</p>
+                    </div>
+                    <div class="col-md-6" style="text-align: center" id="sky">
+                        <div style="border: 2px solid rgba(129, 128, 128, 0.555);margin: 10px;" id="sky-border">
+                        <p style="font-size: 30px">不銹鋼天平</p>
                         <img src="./img1.jpg" alt="" style="width: 200px;height: 200px;" >
+                        <p>vkdjvklxjvkxcjvk</p>
+                    </div>
                     </div>
                  </div>
             </div>
