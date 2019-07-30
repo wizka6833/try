@@ -6,19 +6,123 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>myweb</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/myweb.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        /*function product(){
-            fetch(" https://wizka6833.github.io/human/product.html").then(function(reslut){
-                console.reslut;
-                let section1 = document.getElementById("section1")
-                section1.innerHTML = reslut;
-            })
-        };*/
-    </script>
+    <style>
+      /**{
+   border: 2px solid black;
+}*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+#header{
+    width: 100%;
+    height: 90px;
+    background-color:rgba(201, 75, 37, 0.87);
+    text-align: center;
+}
+.head{
+    font-size: 50px;
+    font-family: monospace;
+    color: blanchedalmond;
+}
+#row{
+    height: 50px;
+}
+
+.serch{
+    margin-top: 10px;
+    border-radius:5px;
+}
+.serch:after{
+    background-image: url("../img/serch.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+}
+.section1{
+    width: 100%;
+    height: 800px;
+    padding: 0;
+}
+/*.carousel{
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    margin: 0;
+}*/
+.carousel-item{
+    background-color: blueviolet;
+    height:800px;
+    background-size: cover;
+}
+.carousel-item:nth-child(1){
+    background-image: url("img1.jpg");
+    background-position: center;
+}
+.carousel-item:nth-child(2){
+    background-image: url("serch.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.carousel-item:nth-child(3){
+    background-image: url("img1.jpg");
+    background-position: center;
+}
+#navbar{
+    background: linear-gradient(to bottom,rgb(34, 34, 33) 0% ,rgb(97, 97, 96) 100%);
+}
+#namecard1:before{
+    content: "";
+    width: 80px;
+    height: 50px;
+    border: 1px solid black;
+    display: block;
+    position: absolute;
+    left: 25px;
+    top:95px;
+    background-image: url("img1.jpg");
+    background-size: cover;
+    background-position: center,center;
+}
+#namecard2:before{
+    content: "";
+    width: 80px;
+    height: 50px;
+    border: 1px solid black;
+    display: block;
+    position: absolute;
+    left: 25px;
+    top:200px;
+    background-image: url("img1.jpg");
+    background-size: cover;
+    background-position: center,center;
+}
+
+.product{
+    display: inline;
+    color:rgb(19, 5, 16);
+    margin-left: 10px;
+    
+}
+/*/
+/*.section2>#namecard:before{
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+}
+*/
+    </style>
 </head>
 <body>
 <header id="header" class="py-2">
